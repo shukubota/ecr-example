@@ -1,0 +1,15 @@
+version: '3'
+services:
+  node-base:
+    container_name: node-base
+    build: .
+    volumes:
+      - type: bind
+        source: .
+        target: /root/work
+    working_dir: /root/work
+    entrypoint: bash
+    stdin_open: true
+    tty: true
+    ports:
+      - 7777:7777

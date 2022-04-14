@@ -1,1 +1,1 @@
-console.log('ecr-pushだよa');
+console.log('ecr-pushだよ');
